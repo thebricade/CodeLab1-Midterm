@@ -15,12 +15,12 @@ public class GameManger : MonoBehaviour
 {
 	private GameState currentState;
 	private GameObject pause;
-	private GameObject[] titleScreenObj;
-	private GameObject[] aboutScreenObj;
 
-	private Button playButton;
+	private Button playButton, aboutButton;
 
-	private GameObject titleMenu;
+	public GameObject titleMenu;
+	public GameObject aboutScreen;
+	public GameObject lvlObjs;
 
 	public static GameManger instance; 
 	// Use this for initialization
@@ -35,11 +35,16 @@ public class GameManger : MonoBehaviour
 			
 			//Game Menu Objs
 			//GameObject titleMenu = Instantiate((Resources.Load<GameObject>("Prefabs/TitleMenu")));
-			titleMenu = GameObject.Find("TitleMenu"); 
+			currentState = GameState.title; 
 			titleMenu.SetActive(true);
+			//setting the buttons on the main menu
 			playButton = GameObject.Find("PlayButton").GetComponent<Button>();
 			playButton.onClick.AddListener(TaskOnPlayClick);
-			currentState = GameState.title;
+			aboutButton = GameObject.Find("AboutButton").GetComponent<Button>();
+			aboutButton.onClick.AddListener(TaskOnAboutClick);
+			
+
+			lvlObjs.SetActive(false);
 		}
 		else
 		{
@@ -60,10 +65,17 @@ public class GameManger : MonoBehaviour
 				Time.timeScale = 0f;
 				break;
 			case GameState.about:
+				aboutScreen.SetActive(true);
+				playButton = GameObject.Find("PlayButton").GetComponent<Button>();
+
 				break;
 			case GameState.playing:
+				Time.timeScale = 1.0f;
+				lvlObjs.SetActive(true);
 				break;
 			case  GameState.pause:
+				Time.timeScale = 0f;
+				lvlObjs.SetActive(false);
 				break;
 		}
 	}
@@ -71,7 +83,6 @@ public class GameManger : MonoBehaviour
 	void TaskOnPlayClick()
 	{
 		//all title screen objects need to be destroyed OR turn it off?? 
-		
 		titleMenu.SetActive(false);
 		currentState = GameState.playing;
 
@@ -82,7 +93,19 @@ public class GameManger : MonoBehaviour
 			//Destroy(titleScreenObj[i]);
 			//titleScreenObj[i].SetActive(false);
 			
-		} */
+		} */	
+	}
+
+	void TaskOnAboutClick()
+	{
+		titleMenu.SetActive(false);
+		currentState = GameState.about;
 		
+
+	}
+
+	public void hitPlayButton()
+	{
+		currentState = GameState.playing;
 	}
 }
