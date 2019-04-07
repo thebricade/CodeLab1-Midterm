@@ -1,7 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Security.Cryptography.X509Certificates;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public enum GameState
 {
@@ -26,41 +28,45 @@ public class GameManger : MonoBehaviour
 	public GameObject titleMenu;
 	public GameObject aboutScreen;
 	public GameObject pauseMenu;
-	public GameObject lvlObjs;
+	public GameObject[] lvlObjs;
 
-	public static GameManger instance; 
+	public static GameManger instance = null; 
 	
 	//set up timer
 	public float timeLeft;
-	public Text displayTimer; 
+	public Text displayTimer;
+
+	private int levelNum= 0;
+	
 	
 	// Use this for initialization
-	void Start () {
-		
-		//timeLeft = 30f;
-		
+	private void Awake()
+	{
+			
 		//Singleton Make sure there's only one GM 
+
 		if (instance  == null)
 		{
-			DontDestroyOnLoad(gameObject);
 			instance = this;
+			DontDestroyOnLoad(gameObject);
 			//set starting state
-			
-			//Game Menu Objs
-			//GameObject titleMenu = Instantiate((Resources.Load<GameObject>("Prefabs/TitleMenu")));
-			currentState = GameState.title; 
-			titleMenu.SetActive(true);
-			//setting the buttons on the main menu
-			//playButton = GameObject.Find("PlayButton").GetComponent<Button>();
-			//aboutButton = GameObject.Find("AboutButton").GetComponent<Button>();
-			
-
-			lvlObjs.SetActive(false);
+		
+			//currentState = GameState.title; 
+			//titleMenu.SetActive(true);
+			//lvlObjs.SetActive(false);
 		}
 		else
 		{
-			
+			Destroy(this);
 		}
+	}
+
+	void Start () {
+		
+		timeLeft = 3;
+		currentState = GameState.title;
+		lvlObjs[levelNum].SetActive(false);
+	
 	}
 	
 	// Update is called once per frame
@@ -80,18 +86,29 @@ public class GameManger : MonoBehaviour
 				break;
 			case GameState.playing:
 				Time.timeScale = 1.0f;
-				lvlObjs.SetActive(true);
 				
+				lvlObjs[levelNum].SetActive(true);
+				
+
 				//while PLAYING see if Space or ESC has been pressed to pause
 				if (Input.GetKey(KeyCode.Space) || Input.GetKey(KeyCode.Escape))
 				{
 					currentState = GameState.pause;
 				}
+				
 				//running the timer
 				timeLeft -= Time.deltaTime;
 				displayTimer.text = timeLeft.ToString();
-				if (timeLeft <= 0)
+				
+				if (timeLeft < 0)
 				{
+					
+					Debug.Log(levelNum);
+					if (levelNum < 2)
+					{
+						SceneManager.LoadScene(levelNum+1);
+						
+					}
 					changeLevel();
 				}
 				
@@ -99,7 +116,7 @@ public class GameManger : MonoBehaviour
 			case  GameState.pause:
 				Time.timeScale = 0f;
 				pauseMenu.SetActive(true);
-				lvlObjs.SetActive(false);
+				lvlObjs[levelNum].SetActive(false);
 				
 				break;
 		}
@@ -107,16 +124,24 @@ public class GameManger : MonoBehaviour
 
 	void changeLevel()
 	{
-		switch (currentLevel)
+		if (levelNum < 2)
 		{
-			case Level.level1:
-				timeLeft = 10; 
+			levelNum = levelNum + 1;
+		}
+
+		switch (levelNum)
+		{
+			case 1:
+				//level 2
+				timeLeft = 7f;
+				lvlObjs[0].SetActive(false);
+				
 				break;
-			case Level.level2:
-				timeLeft = 60f;
-				break;
-			case Level.level3:
-				timeLeft = 40f; 
+			case 2:
+				//level 3
+				timeLeft = 10f;
+				lvlObjs[0].SetActive(false);
+				lvlObjs[1].SetActive(false);
 				break;
 							
 		}
