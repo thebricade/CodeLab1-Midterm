@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="312fe0ca-34f9-480f-94cc-b4514f6fda93" name="Default Changelist" comment="Adding Menu Code">
+    <list default="true" id="312fe0ca-34f9-480f-94cc-b4514f6fda93" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.CodelabMidterm/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CodelabMidterm/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level1.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameManger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameManger.cs" afterDir="false" />
@@ -24,14 +24,14 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="cs" value="1509" />
-          <entry key="txt" value="41" />
+          <entry key="cs" value="2405" />
+          <entry key="txt" value="184" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="C#" value="1509" />
-          <entry key="PLAIN_TEXT" value="41" />
+          <entry key="C#" value="2405" />
+          <entry key="PLAIN_TEXT" value="184" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -68,21 +68,26 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/GameManger.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="303">
-              <caret line="45" column="12" lean-forward="true" selection-start-line="45" selection-start-column="12" selection-end-line="45" selection-end-column="12" />
+            <state relative-caret-position="648">
+              <caret line="104" column="5" lean-forward="true" selection-start-line="104" selection-start-column="5" selection-end-line="104" selection-end-column="5" />
               <folding>
-                <marker date="1554649942613" expanded="true" signature="6:100" ph="..." />
-                <marker date="1554649942613" expanded="true" signature="123:160" ph="{...}" />
-                <marker date="1554649942613" expanded="true" signature="201:1715" ph="{...}" />
-                <marker date="1554649942613" expanded="true" signature="486:1017" ph="{...}" />
-                <marker date="1554649942613" expanded="true" signature="560:995" ph="{...}" />
-                <marker date="1554649942613" expanded="true" signature="622:758" ph="/* set starting state ... */" />
-                <marker date="1554649942613" expanded="true" signature="1002:1014" ph="{...}" />
-                <marker date="1554649942613" expanded="true" signature="1072:1096" ph="{...}" />
-                <marker date="1554649942613" expanded="true" signature="1120:1330" ph="{...}" />
-                <marker date="1554649942613" expanded="true" signature="1147:1327" ph="{...}" />
-                <marker date="1554649942613" expanded="true" signature="1355:1713" ph="{...}" />
-                <marker date="1554649942613" expanded="true" signature="1499:1707" ph="/* titleScreenObj = GameObject.FindGameObjectsWithTag(&quot;TitleScreen&quot;); ... */" />
+                <marker date="1554655624512" expanded="true" signature="6:100" ph="..." />
+                <marker date="1554655624512" expanded="true" signature="123:160" ph="{...}" />
+                <marker date="1554655624512" expanded="true" signature="201:2586" ph="{...}" />
+                <marker date="1554655624512" expanded="true" signature="512:1098" ph="{...}" />
+                <marker date="1554655624512" expanded="true" signature="586:1076" ph="{...}" />
+                <marker date="1554655624512" expanded="true" signature="648:784" ph="/* set starting state ... */" />
+                <marker date="1554655624512" expanded="true" signature="854:1038" ph="/* setting the buttons on the main menu ... */" />
+                <marker date="1554655624512" expanded="true" signature="1083:1095" ph="{...}" />
+                <marker date="1554655624512" expanded="true" signature="1153:1177" ph="{...}" />
+                <marker date="1554655624512" expanded="true" signature="1201:1780" ph="{...}" />
+                <marker date="1554655624512" expanded="true" signature="1228:1777" ph="{...}" />
+                <marker date="1554655624512" expanded="true" signature="1585:1634" ph="{...}" />
+                <marker date="1554655624512" expanded="true" signature="1805:2158" ph="{...}" />
+                <marker date="1554655624512" expanded="true" signature="1946:2154" ph="/* titleScreenObj = GameObject.FindGameObjectsWithTag(&quot;TitleScreen&quot;); ... */" />
+                <marker date="1554655624512" expanded="true" signature="2188:2322" ph="{...}" />
+                <marker date="1554655624512" expanded="true" signature="2353:2423" ph="{...}" />
+                <marker date="1554655624512" expanded="true" signature="2453:2584" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -176,7 +181,7 @@
       <option name="presentableId" value="Default" />
       <updated>1554640633381</updated>
       <workItem from="1554640635779" duration="232000" />
-      <workItem from="1554640964474" duration="5405000" />
+      <workItem from="1554640964474" duration="10053000" />
     </task>
     <task id="LOCAL-00001" summary="Click and Drag working">
       <created>1554641662665</created>
@@ -192,11 +197,25 @@
       <option name="project" value="LOCAL" />
       <updated>1554647851165</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Title Menu working, making it setObject Active instead of deleting Object from scene">
+      <created>1554650362773</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1554650362773</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Changing Buttons onClick to from inspector">
+      <created>1554653422427</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1554653422427</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5637000" />
+    <option name="totallyTimeSpent" value="10285000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -248,7 +267,9 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Click and Drag working" />
     <MESSAGE value="Adding Menu Code" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding Menu Code" />
+    <MESSAGE value="Title Menu working, making it setObject Active instead of deleting Object from scene" />
+    <MESSAGE value="Changing Buttons onClick to from inspector" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changing Buttons onClick to from inspector" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -278,21 +299,26 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/GameManger.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="303">
-          <caret line="45" column="12" lean-forward="true" selection-start-line="45" selection-start-column="12" selection-end-line="45" selection-end-column="12" />
+        <state relative-caret-position="648">
+          <caret line="104" column="5" lean-forward="true" selection-start-line="104" selection-start-column="5" selection-end-line="104" selection-end-column="5" />
           <folding>
-            <marker date="1554649942613" expanded="true" signature="6:100" ph="..." />
-            <marker date="1554649942613" expanded="true" signature="123:160" ph="{...}" />
-            <marker date="1554649942613" expanded="true" signature="201:1715" ph="{...}" />
-            <marker date="1554649942613" expanded="true" signature="486:1017" ph="{...}" />
-            <marker date="1554649942613" expanded="true" signature="560:995" ph="{...}" />
-            <marker date="1554649942613" expanded="true" signature="622:758" ph="/* set starting state ... */" />
-            <marker date="1554649942613" expanded="true" signature="1002:1014" ph="{...}" />
-            <marker date="1554649942613" expanded="true" signature="1072:1096" ph="{...}" />
-            <marker date="1554649942613" expanded="true" signature="1120:1330" ph="{...}" />
-            <marker date="1554649942613" expanded="true" signature="1147:1327" ph="{...}" />
-            <marker date="1554649942613" expanded="true" signature="1355:1713" ph="{...}" />
-            <marker date="1554649942613" expanded="true" signature="1499:1707" ph="/* titleScreenObj = GameObject.FindGameObjectsWithTag(&quot;TitleScreen&quot;); ... */" />
+            <marker date="1554655624512" expanded="true" signature="6:100" ph="..." />
+            <marker date="1554655624512" expanded="true" signature="123:160" ph="{...}" />
+            <marker date="1554655624512" expanded="true" signature="201:2586" ph="{...}" />
+            <marker date="1554655624512" expanded="true" signature="512:1098" ph="{...}" />
+            <marker date="1554655624512" expanded="true" signature="586:1076" ph="{...}" />
+            <marker date="1554655624512" expanded="true" signature="648:784" ph="/* set starting state ... */" />
+            <marker date="1554655624512" expanded="true" signature="854:1038" ph="/* setting the buttons on the main menu ... */" />
+            <marker date="1554655624512" expanded="true" signature="1083:1095" ph="{...}" />
+            <marker date="1554655624512" expanded="true" signature="1153:1177" ph="{...}" />
+            <marker date="1554655624512" expanded="true" signature="1201:1780" ph="{...}" />
+            <marker date="1554655624512" expanded="true" signature="1228:1777" ph="{...}" />
+            <marker date="1554655624512" expanded="true" signature="1585:1634" ph="{...}" />
+            <marker date="1554655624512" expanded="true" signature="1805:2158" ph="{...}" />
+            <marker date="1554655624512" expanded="true" signature="1946:2154" ph="/* titleScreenObj = GameObject.FindGameObjectsWithTag(&quot;TitleScreen&quot;); ... */" />
+            <marker date="1554655624512" expanded="true" signature="2188:2322" ph="{...}" />
+            <marker date="1554655624512" expanded="true" signature="2353:2423" ph="{...}" />
+            <marker date="1554655624512" expanded="true" signature="2453:2584" ph="{...}" />
           </folding>
         </state>
       </provider>

@@ -20,6 +20,7 @@ public class GameManger : MonoBehaviour
 
 	public GameObject titleMenu;
 	public GameObject aboutScreen;
+	public GameObject pauseMenu;
 	public GameObject lvlObjs;
 
 	public static GameManger instance; 
@@ -38,10 +39,8 @@ public class GameManger : MonoBehaviour
 			currentState = GameState.title; 
 			titleMenu.SetActive(true);
 			//setting the buttons on the main menu
-			playButton = GameObject.Find("PlayButton").GetComponent<Button>();
-			playButton.onClick.AddListener(TaskOnPlayClick);
-			aboutButton = GameObject.Find("AboutButton").GetComponent<Button>();
-			aboutButton.onClick.AddListener(TaskOnAboutClick);
+			//playButton = GameObject.Find("PlayButton").GetComponent<Button>();
+			//aboutButton = GameObject.Find("AboutButton").GetComponent<Button>();
 			
 
 			lvlObjs.SetActive(false);
@@ -66,16 +65,22 @@ public class GameManger : MonoBehaviour
 				break;
 			case GameState.about:
 				aboutScreen.SetActive(true);
-				playButton = GameObject.Find("PlayButton").GetComponent<Button>();
-
 				break;
 			case GameState.playing:
 				Time.timeScale = 1.0f;
 				lvlObjs.SetActive(true);
+				
+				//while PLAYING see if Space or ESC has been pressed to pause
+				if (Input.GetKey(KeyCode.Space) || Input.GetKey(KeyCode.Escape))
+				{
+					currentState = GameState.pause;
+				}
 				break;
 			case  GameState.pause:
 				Time.timeScale = 0f;
+				pauseMenu.SetActive(true);
 				lvlObjs.SetActive(false);
+				
 				break;
 		}
 	}
@@ -96,16 +101,25 @@ public class GameManger : MonoBehaviour
 		} */	
 	}
 
-	void TaskOnAboutClick()
+	public void hitPlayButton()
+	{
+		titleMenu.SetActive(false);
+		aboutScreen.SetActive(false);
+		pauseMenu.SetActive(false);
+		currentState = GameState.playing;
+	}
+
+	public void hitAboutButton()
 	{
 		titleMenu.SetActive(false);
 		currentState = GameState.about;
-		
-
 	}
 
-	public void hitPlayButton()
+	public void hitMenuButton()
 	{
-		currentState = GameState.playing;
+		titleMenu.SetActive(true);
+		aboutScreen.SetActive(false);
+		pauseMenu.SetActive(false);
+		currentState = GameState.title;
 	}
 }
