@@ -11,21 +11,33 @@ public enum GameState
 	playing
 }
 
+public enum Level
+{
+	level1,
+	level2,
+	level3
+}
+
 public class GameManger : MonoBehaviour
 {
 	private GameState currentState;
-	private GameObject pause;
-
-	private Button playButton, aboutButton;
-
+	private Level currentLevel;
+	
 	public GameObject titleMenu;
 	public GameObject aboutScreen;
 	public GameObject pauseMenu;
 	public GameObject lvlObjs;
 
 	public static GameManger instance; 
+	
+	//set up timer
+	public float timeLeft;
+	public Text displayTimer; 
+	
 	// Use this for initialization
 	void Start () {
+		
+		//timeLeft = 30f;
 		
 		//Singleton Make sure there's only one GM 
 		if (instance  == null)
@@ -75,6 +87,14 @@ public class GameManger : MonoBehaviour
 				{
 					currentState = GameState.pause;
 				}
+				//running the timer
+				timeLeft -= Time.deltaTime;
+				displayTimer.text = timeLeft.ToString();
+				if (timeLeft <= 0)
+				{
+					changeLevel();
+				}
+				
 				break;
 			case  GameState.pause:
 				Time.timeScale = 0f;
@@ -85,22 +105,23 @@ public class GameManger : MonoBehaviour
 		}
 	}
 
-	void TaskOnPlayClick()
+	void changeLevel()
 	{
-		//all title screen objects need to be destroyed OR turn it off?? 
-		titleMenu.SetActive(false);
-		currentState = GameState.playing;
-
-		/*titleScreenObj = GameObject.FindGameObjectsWithTag("TitleScreen");
-
-		for (var i = 0; i < titleScreenObj.Length; i++)
+		switch (currentLevel)
 		{
-			//Destroy(titleScreenObj[i]);
-			//titleScreenObj[i].SetActive(false);
-			
-		} */	
+			case Level.level1:
+				timeLeft = 10; 
+				break;
+			case Level.level2:
+				timeLeft = 60f;
+				break;
+			case Level.level3:
+				timeLeft = 40f; 
+				break;
+							
+		}
 	}
-
+	
 	public void hitPlayButton()
 	{
 		titleMenu.SetActive(false);
