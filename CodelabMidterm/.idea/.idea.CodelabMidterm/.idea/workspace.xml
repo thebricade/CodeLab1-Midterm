@@ -1,17 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="312fe0ca-34f9-480f-94cc-b4514f6fda93" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../.idea/.idea.CodelabMidterm/.idea/contentModel.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../.idea/.idea.CodelabMidterm/.idea/indexLayout.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../.idea/.idea.CodelabMidterm/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../.idea/.idea.CodelabMidterm/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../.idea/.idea.CodelabMidterm/riderModule.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.CodelabMidterm/.idea/indexLayout.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.CodelabMidterm/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.CodelabMidterm/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.CodelabMidterm/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.CodelabMidterm/riderModule.iml" afterDir="false" />
+    <list default="true" id="312fe0ca-34f9-480f-94cc-b4514f6fda93" name="Default Changelist" comment="Adding Menu Code">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.CodelabMidterm/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CodelabMidterm/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level1.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameManger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameManger.cs" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -31,23 +24,35 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="cs" value="314" />
+          <entry key="cs" value="1509" />
+          <entry key="txt" value="41" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="C#" value="314" />
+          <entry key="C#" value="1509" />
+          <entry key="PLAIN_TEXT" value="41" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="cs" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="C#" value="1" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/ClickAndDrag.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="28" column="27" lean-forward="true" selection-start-line="28" selection-start-column="27" selection-end-line="31" />
+            <state relative-caret-position="435">
+              <caret line="31" selection-start-line="31" selection-end-line="31" />
               <folding>
                 <marker date="1554641440631" expanded="false" signature="6:78" ph="..." />
                 <marker date="1554641440631" expanded="true" signature="121:686" ph="{...}" />
@@ -60,6 +65,29 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/GameManger.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="303">
+              <caret line="45" column="12" lean-forward="true" selection-start-line="45" selection-start-column="12" selection-end-line="45" selection-end-column="12" />
+              <folding>
+                <marker date="1554649942613" expanded="true" signature="6:100" ph="..." />
+                <marker date="1554649942613" expanded="true" signature="123:160" ph="{...}" />
+                <marker date="1554649942613" expanded="true" signature="201:1715" ph="{...}" />
+                <marker date="1554649942613" expanded="true" signature="486:1017" ph="{...}" />
+                <marker date="1554649942613" expanded="true" signature="560:995" ph="{...}" />
+                <marker date="1554649942613" expanded="true" signature="622:758" ph="/* set starting state ... */" />
+                <marker date="1554649942613" expanded="true" signature="1002:1014" ph="{...}" />
+                <marker date="1554649942613" expanded="true" signature="1072:1096" ph="{...}" />
+                <marker date="1554649942613" expanded="true" signature="1120:1330" ph="{...}" />
+                <marker date="1554649942613" expanded="true" signature="1147:1327" ph="{...}" />
+                <marker date="1554649942613" expanded="true" signature="1355:1713" ph="{...}" />
+                <marker date="1554649942613" expanded="true" signature="1499:1707" ph="/* titleScreenObj = GameObject.FindGameObjectsWithTag(&quot;TitleScreen&quot;); ... */" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
     </leaf>
   </component>
   <component name="Git.Settings">
@@ -67,11 +95,13 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/ClickAndDrag.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameManger.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Assets/Scripts/ClickAndDrag.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GameManger.cs" />
       </list>
     </option>
   </component>
@@ -146,12 +176,27 @@
       <option name="presentableId" value="Default" />
       <updated>1554640633381</updated>
       <workItem from="1554640635779" duration="232000" />
-      <workItem from="1554640964474" duration="686000" />
+      <workItem from="1554640964474" duration="5405000" />
     </task>
+    <task id="LOCAL-00001" summary="Click and Drag working">
+      <created>1554641662665</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1554641662665</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Adding Menu Code">
+      <created>1554647851165</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1554647851165</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="918000" />
+    <option name="totallyTimeSpent" value="5637000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -200,6 +245,11 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Click and Drag working" />
+    <MESSAGE value="Adding Menu Code" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding Menu Code" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
@@ -213,8 +263,8 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/ClickAndDrag.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="28" column="27" lean-forward="true" selection-start-line="28" selection-start-column="27" selection-end-line="31" />
+        <state relative-caret-position="435">
+          <caret line="31" selection-start-line="31" selection-end-line="31" />
           <folding>
             <marker date="1554641440631" expanded="false" signature="6:78" ph="..." />
             <marker date="1554641440631" expanded="true" signature="121:686" ph="{...}" />
@@ -222,6 +272,27 @@
             <marker date="1554641440631" expanded="true" signature="306:313" ph="{...}" />
             <marker date="1554641440631" expanded="true" signature="334:503" ph="{...}" />
             <marker date="1554641440631" expanded="true" signature="524:684" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/GameManger.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="303">
+          <caret line="45" column="12" lean-forward="true" selection-start-line="45" selection-start-column="12" selection-end-line="45" selection-end-column="12" />
+          <folding>
+            <marker date="1554649942613" expanded="true" signature="6:100" ph="..." />
+            <marker date="1554649942613" expanded="true" signature="123:160" ph="{...}" />
+            <marker date="1554649942613" expanded="true" signature="201:1715" ph="{...}" />
+            <marker date="1554649942613" expanded="true" signature="486:1017" ph="{...}" />
+            <marker date="1554649942613" expanded="true" signature="560:995" ph="{...}" />
+            <marker date="1554649942613" expanded="true" signature="622:758" ph="/* set starting state ... */" />
+            <marker date="1554649942613" expanded="true" signature="1002:1014" ph="{...}" />
+            <marker date="1554649942613" expanded="true" signature="1072:1096" ph="{...}" />
+            <marker date="1554649942613" expanded="true" signature="1120:1330" ph="{...}" />
+            <marker date="1554649942613" expanded="true" signature="1147:1327" ph="{...}" />
+            <marker date="1554649942613" expanded="true" signature="1355:1713" ph="{...}" />
+            <marker date="1554649942613" expanded="true" signature="1499:1707" ph="/* titleScreenObj = GameObject.FindGameObjectsWithTag(&quot;TitleScreen&quot;); ... */" />
           </folding>
         </state>
       </provider>
