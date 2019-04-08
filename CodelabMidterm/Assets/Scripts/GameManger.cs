@@ -14,7 +14,7 @@ public enum GameState
 	ending
 }
 
-public enum Level
+public enum Level //not using 
 {
 	level1,
 	level2,
@@ -64,7 +64,7 @@ public class GameManger : MonoBehaviour
 
 	void Start () {
 		
-		timeLeft = 3;
+		timeLeft = 15;
 		currentState = GameState.title;
 		lvlObjs[levelNum].SetActive(false);
 	
@@ -142,13 +142,13 @@ public class GameManger : MonoBehaviour
 		{
 			case 1:
 				//level 2
-				timeLeft = 7f;
+				timeLeft = 20f;
 				lvlObjs[0].SetActive(false);
 				
 				break;
 			case 2:
 				//level 3
-				timeLeft = 10f;
+				timeLeft = 30f;
 				lvlObjs[0].SetActive(false);
 				lvlObjs[1].SetActive(false);
 				break;
