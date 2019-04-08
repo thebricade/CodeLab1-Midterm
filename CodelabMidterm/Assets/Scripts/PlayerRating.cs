@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI; 
 using System.IO;
-using System; 
+using System;
+using System.Reflection;
 
 
 public class PlayerRating : MonoBehaviour
@@ -28,6 +29,37 @@ public class PlayerRating : MonoBehaviour
             
             File.WriteAllText(filePath,output);
         }
+
+        /*string[] inputLines = File.ReadAllLines(filePath); 
+        for (int y = 0; y < inputLines.Length; y++)
+        {
+            string line = inputLines[y];
+            for (int x = 0; x < line.Length; x++)
+            {
+                //create empty GameObject
+                GameObject tile = null;
+                switch (line[x])
+                {
+                    case 'x': 
+                        //make a sad face
+                        tile = Instantiate(Resources.Load("Prefabs/Sad")) as GameObject;
+                        break;
+                    case 'o': 
+                        //make a happy face
+                        tile = Instantiate(Resources.Load("Prefabs/Happy")) as GameObject;
+                        break;
+                    default:
+                        tile = null;
+                        break;        
+                }
+                //position the tile 
+                if (tile != null)
+                {
+                    tile.transform.position = new Vector3(x - line.Length/2f, inputLines.Length/2f-y); 
+                }
+            }
+        }*/ 
+
     }
 
 

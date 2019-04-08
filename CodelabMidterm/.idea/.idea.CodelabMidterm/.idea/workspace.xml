@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="312fe0ca-34f9-480f-94cc-b4514f6fda93" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.CodelabMidterm/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CodelabMidterm/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.CodelabMidterm/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CodelabMidterm/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameManger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameManger.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level3.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level3.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerRating.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerRating.cs" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -48,20 +48,22 @@
     <session id="1294257067">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+          <entry key="project.closed" value="1" />
           <entry key="project.open.time.13" value="1" />
-          <entry key="project.opened" value="1" />
+          <entry key="project.open.time.3" value="1" />
+          <entry key="project.opened" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="cs" value="2273" />
-          <entry key="txt" value="182" />
+          <entry key="cs" value="2816" />
+          <entry key="txt" value="273" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="C#" value="2273" />
-          <entry key="PLAIN_TEXT" value="182" />
+          <entry key="C#" value="2816" />
+          <entry key="PLAIN_TEXT" value="273" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -90,7 +92,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/GameManger.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
+            <state relative-caret-position="1440">
               <caret line="96" column="26" selection-start-line="96" selection-start-column="26" selection-end-line="96" selection-end-column="26" />
               <folding>
                 <marker date="1554669947645" expanded="true" signature="6:188" ph="..." />
@@ -120,19 +122,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/PlayerRating.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="310">
-              <caret line="23" column="69" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="69" />
+            <state relative-caret-position="522">
+              <caret line="60" column="12" selection-start-line="60" selection-start-column="12" selection-end-line="60" selection-end-column="12" />
               <folding>
-                <marker date="1554686643158" expanded="true" signature="6:132" ph="..." />
-                <marker date="1554686643158" expanded="true" signature="177:900" ph="{...}" />
-                <marker date="1554686643158" expanded="true" signature="348:465" ph="/* private const string File_PlayerRating = &quot;/playerRating.txt&quot;; ... */" />
-                <marker date="1554686643158" expanded="true" signature="482:818" ph="{...}" />
-                <marker date="1554686643158" expanded="true" signature="497:588" ph="/* playerComment.text = &quot;Enter Text Here...&quot;; ... */" />
-                <marker date="1554686643158" expanded="true" signature="694:812" ph="{...}" />
-                <marker date="1554686643158" expanded="true" signature="877:898" ph="{...}" />
+                <marker date="1554690999736" expanded="false" signature="6:157" ph="..." />
+                <marker date="1554690999736" expanded="true" signature="201:2039" ph="{...}" />
+                <marker date="1554690999736" expanded="true" signature="372:489" ph="/* private const string File_PlayerRating = &quot;/playerRating.txt&quot;; ... */" />
+                <marker date="1554690999736" expanded="true" signature="506:1957" ph="{...}" />
+                <marker date="1554690999736" expanded="true" signature="521:612" ph="/* playerComment.text = &quot;Enter Text Here...&quot;; ... */" />
+                <marker date="1554690999736" expanded="true" signature="718:836" ph="{...}" />
+                <marker date="1554690999736" expanded="true" signature="846:1949" ph="/* string[] inputLines = File.ReadAllLines(filePath); ... */" />
+                <marker date="1554690999736" expanded="true" signature="2016:2037" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -141,10 +144,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/SadVote.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
+            <state relative-caret-position="300">
               <caret line="23" column="42" selection-start-line="23" selection-start-column="42" selection-end-line="23" selection-end-column="42" />
               <folding>
-                <marker date="1554687002619" expanded="true" signature="6:95" ph="..." />
+                <marker date="1554687002619" expanded="false" signature="6:95" ph="..." />
                 <marker date="1554687002619" expanded="true" signature="133:491" ph="{...}" />
                 <marker date="1554687002619" expanded="true" signature="205:226" ph="{...}" />
                 <marker date="1554687002619" expanded="true" signature="284:305" ph="{...}" />
@@ -154,11 +157,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/HappyVote.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
+            <state>
+              <caret column="6" selection-start-column="6" selection-end-column="6" />
               <folding>
                 <marker date="1554687007448" expanded="true" signature="6:95" ph="..." />
                 <marker date="1554687007448" expanded="true" signature="135:537" ph="{...}" />
@@ -187,9 +190,9 @@
       <list>
         <option value="$PROJECT_DIR$/Assets/Scripts/ClickAndDrag.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GameManger.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/PlayerRating.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/SadVote.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/HappyVote.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PlayerRating.cs" />
       </list>
     </option>
   </component>
@@ -200,8 +203,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="651" />
-    <option name="y" value="27" />
+    <option name="x" value="315" />
+    <option name="y" value="25" />
     <option name="width" value="860" />
     <option name="height" value="727" />
   </component>
@@ -211,11 +214,11 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="SolutionExplorer">
-        <option name="show-all-files" value="false" />
-      </pane>
       <pane id="UnityExplorer">
         <option name="show-hidden-items" value="false" />
+      </pane>
+      <pane id="SolutionExplorer">
+        <option name="show-all-files" value="false" />
       </pane>
       <pane id="FileSystemExplorer" />
     </panes>
@@ -265,7 +268,8 @@
       <updated>1554640633381</updated>
       <workItem from="1554640635779" duration="232000" />
       <workItem from="1554640964474" duration="10053000" />
-      <workItem from="1554658617654" duration="12795000" />
+      <workItem from="1554658617654" duration="13842000" />
+      <workItem from="1554690561597" duration="374000" />
     </task>
     <task id="LOCAL-00001" summary="Click and Drag working">
       <created>1554641662665</created>
@@ -309,11 +313,18 @@
       <option name="project" value="LOCAL" />
       <updated>1554669427584</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Added file that allows players to vote on their experience and scores the results">
+      <created>1554687082434</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1554687082434</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23080000" />
+    <option name="totallyTimeSpent" value="24501000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -325,10 +336,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="651" y="27" width="860" height="727" extended-state="0" />
+    <frame x="315" y="25" width="860" height="727" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.0" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16625917" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -369,7 +380,8 @@
     <MESSAGE value="Changing Buttons onClick to from inspector" />
     <MESSAGE value="Making timer work in game" />
     <MESSAGE value="Timer works to switch game levels and change out available sprites per level. &#10;Need to add end game screen that removes the timer and sprites for levels." />
-    <option name="LAST_COMMIT_MESSAGE" value="Timer works to switch game levels and change out available sprites per level. &#10;Need to add end game screen that removes the timer and sprites for levels." />
+    <MESSAGE value="Added file that allows players to vote on their experience and scores the results" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added file that allows players to vote on their experience and scores the results" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -391,7 +403,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/GameManger.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
+        <state relative-caret-position="1440">
           <caret line="96" column="26" selection-start-line="96" selection-start-column="26" selection-end-line="96" selection-end-column="26" />
           <folding>
             <marker date="1554669947645" expanded="true" signature="6:188" ph="..." />
@@ -420,28 +432,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/PlayerRating.cs">
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/HappyVote.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="310">
-          <caret line="23" column="69" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="69" />
+        <state>
+          <caret column="6" selection-start-column="6" selection-end-column="6" />
           <folding>
-            <marker date="1554686643158" expanded="true" signature="6:132" ph="..." />
-            <marker date="1554686643158" expanded="true" signature="177:900" ph="{...}" />
-            <marker date="1554686643158" expanded="true" signature="348:465" ph="/* private const string File_PlayerRating = &quot;/playerRating.txt&quot;; ... */" />
-            <marker date="1554686643158" expanded="true" signature="482:818" ph="{...}" />
-            <marker date="1554686643158" expanded="true" signature="497:588" ph="/* playerComment.text = &quot;Enter Text Here...&quot;; ... */" />
-            <marker date="1554686643158" expanded="true" signature="694:812" ph="{...}" />
-            <marker date="1554686643158" expanded="true" signature="877:898" ph="{...}" />
+            <marker date="1554687007448" expanded="true" signature="6:95" ph="..." />
+            <marker date="1554687007448" expanded="true" signature="135:537" ph="{...}" />
+            <marker date="1554687007448" expanded="true" signature="207:228" ph="{...}" />
+            <marker date="1554687007448" expanded="true" signature="286:307" ph="{...}" />
+            <marker date="1554687007448" expanded="true" signature="339:535" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/SadVote.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
+        <state relative-caret-position="300">
           <caret line="23" column="42" selection-start-line="23" selection-start-column="42" selection-end-line="23" selection-end-column="42" />
           <folding>
-            <marker date="1554687002619" expanded="true" signature="6:95" ph="..." />
+            <marker date="1554687002619" expanded="false" signature="6:95" ph="..." />
             <marker date="1554687002619" expanded="true" signature="133:491" ph="{...}" />
             <marker date="1554687002619" expanded="true" signature="205:226" ph="{...}" />
             <marker date="1554687002619" expanded="true" signature="284:305" ph="{...}" />
@@ -450,16 +460,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/HappyVote.cs">
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/PlayerRating.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
+        <state relative-caret-position="522">
+          <caret line="60" column="12" selection-start-line="60" selection-start-column="12" selection-end-line="60" selection-end-column="12" />
           <folding>
-            <marker date="1554687007448" expanded="true" signature="6:95" ph="..." />
-            <marker date="1554687007448" expanded="true" signature="135:537" ph="{...}" />
-            <marker date="1554687007448" expanded="true" signature="207:228" ph="{...}" />
-            <marker date="1554687007448" expanded="true" signature="286:307" ph="{...}" />
-            <marker date="1554687007448" expanded="true" signature="339:535" ph="{...}" />
+            <marker date="1554690999736" expanded="false" signature="6:157" ph="..." />
+            <marker date="1554690999736" expanded="true" signature="201:2039" ph="{...}" />
+            <marker date="1554690999736" expanded="true" signature="372:489" ph="/* private const string File_PlayerRating = &quot;/playerRating.txt&quot;; ... */" />
+            <marker date="1554690999736" expanded="true" signature="506:1957" ph="{...}" />
+            <marker date="1554690999736" expanded="true" signature="521:612" ph="/* playerComment.text = &quot;Enter Text Here...&quot;; ... */" />
+            <marker date="1554690999736" expanded="true" signature="718:836" ph="{...}" />
+            <marker date="1554690999736" expanded="true" signature="846:1949" ph="/* string[] inputLines = File.ReadAllLines(filePath); ... */" />
+            <marker date="1554690999736" expanded="true" signature="2016:2037" ph="{...}" />
           </folding>
         </state>
       </provider>
