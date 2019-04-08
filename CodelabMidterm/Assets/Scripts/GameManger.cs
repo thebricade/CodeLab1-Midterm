@@ -10,7 +10,8 @@ public enum GameState
 	title,
 	about,
 	pause,
-	playing
+	playing, 
+	ending
 }
 
 public enum Level
@@ -86,8 +87,23 @@ public class GameManger : MonoBehaviour
 				break;
 			case GameState.playing:
 				Time.timeScale = 1.0f;
+				if (timeLeft < 0)
+				{
+					
+					Debug.Log(levelNum);
+					if (levelNum < 2)
+					{
+						SceneManager.LoadScene(levelNum+1);
+						//lvlObjs[levelNum].SetActive(true);
+						
+					}else if (levelNum == 3)
+					{
+						currentState = GameState.ending;
+					}
+					changeLevel();
+				}
 				
-				lvlObjs[levelNum].SetActive(true);
+				
 				
 
 				//while PLAYING see if Space or ESC has been pressed to pause
@@ -100,17 +116,7 @@ public class GameManger : MonoBehaviour
 				timeLeft -= Time.deltaTime;
 				displayTimer.text = timeLeft.ToString();
 				
-				if (timeLeft < 0)
-				{
-					
-					Debug.Log(levelNum);
-					if (levelNum < 2)
-					{
-						SceneManager.LoadScene(levelNum+1);
-						
-					}
-					changeLevel();
-				}
+				
 				
 				break;
 			case  GameState.pause:
@@ -119,12 +125,15 @@ public class GameManger : MonoBehaviour
 				lvlObjs[levelNum].SetActive(false);
 				
 				break;
+			case GameState.ending:
+				displayTimer.text = "How well did you do?"; 
+				break;
 		}
 	}
 
 	void changeLevel()
 	{
-		if (levelNum < 2)
+		if (levelNum < 3)
 		{
 			levelNum = levelNum + 1;
 		}
